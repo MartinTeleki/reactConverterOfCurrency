@@ -39,7 +39,7 @@ export default function App() {
 
   return (
     <div>
-      <input type="text" onChange={(e) => setAmount(e.target.value)} />
+      <input type="text" onChange={(e) => setAmount(+e.target.value)} />
       <select value={fromCurr} onChange={(e) => setFromCurr(e.target.value)}>
         <option value="USD">USD</option>
         <option value="EUR">EUR</option>
